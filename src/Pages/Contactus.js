@@ -1,5 +1,6 @@
 import React from 'react'
-import Banner from '../Component/Props/Banner'
+import Banner from '../Component/Contactus/Banner'
+
 
 function Contactus() {
   return (

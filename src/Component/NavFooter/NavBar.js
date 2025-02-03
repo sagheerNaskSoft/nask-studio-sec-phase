@@ -21,7 +21,7 @@ function NavBar() {
                 <li><Link to={'/rental-spaces'}>Rental Spaces</Link></li>
                 <li><Link to={'/props'}>Props</Link></li>
                 <li><Link to={'/production-service'}>Producation Services</Link></li>
-                <li><Link to={'/'}><button className='banner_btn'>Contact US <PiFlipVerticalLight className="btn_icon"/></button></Link></li>
+                <li><Link to={'/contactus'}><button className='banner_btn'>Contact US <PiFlipVerticalLight className="btn_icon"/></button></Link></li>
             </ul>
         </div>
 
@@ -51,7 +51,7 @@ function NavBar() {
                                     <Link to={'/production-service'}>Producation Services</Link>
                                 </li>
                                 <li>
-                                    <Link>Contact Us</Link>
+                                    <Link to={'/contactus'}>Contact Us</Link>
                                 </li>
                                 <div className='close-minu-button'>
                                     <button onClick={toggleMenu}>close Menu</button>
