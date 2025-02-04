@@ -65,8 +65,7 @@ body {
   position: relative;
   border: 2px solid white;
   position: relative;
-
-
+  z-index: 3333333;
 }
 
 .home-bar {
@@ -289,13 +288,12 @@ body {
   object-fit: cover;
 
 }
-
-.service-section  .dots-container {
+ .dots-container {
   text-align: center;
   margin-top: 10px;
 }
 
-.service-section  .dot {
+ .dot {
   width: 5px;
   height: 5px;
   margin: 0 5px;
@@ -305,8 +303,7 @@ body {
   cursor: pointer;
   transition: background 0.3s;
 }
-
-.service-section  .dot.active{
+  .dot.active{
   background-color: white;
 }
 
@@ -820,7 +817,7 @@ background-position: center;
   align-items: center;
   justify-content: center;
   width: 100%;
-  z-index: 111;
+  z-index: 99999999;
   transition: all .35s linear;
 
 }
@@ -871,6 +868,13 @@ background-position: center;
   }
 .nav-bar ul li{
   font-size: 13px;
+}
+.wedding-footer  .footer .container .footer_arrow1 {
+  position: absolute;
+  /* width: 100px; */
+  top: -156px;
+  width: 132px;
+  left: 70px;
 }
 }
 @media screen and (max-width:1100px) {
@@ -1040,6 +1044,8 @@ background-position: center;
 
 
 
+
+
 @media (max-width :992px){
   
   .text-overlay h1{
@@ -1055,6 +1061,28 @@ background-position: center;
   }
 
   .email_pera br{
+    display: none;
+  }
+
+  .wedding-banner .text-banner , .props-banner .text-banner{
+    width: 100%;
+    padding: 0 100px;
+    top: 55%;
+  }
+
+  .new_props_banner .text-banner{
+    top: 47%;
+  }
+
+  .arrow-down-icon{
+    font-size: 75px !important;
+  }
+
+  .our_product .form_box{
+    min-height: 460px !important;
+  }
+
+  .rental-footer .footer .container .footer_arrow1{
     display: none;
   }
 
@@ -1082,6 +1110,24 @@ background-position: center;
 
   .background-container{
     height: 600px;
+  }
+
+  .wedding-banner .text-banner , .props-banner .text-banner{
+    padding: 0 50px;
+  }
+
+  .wedding-banner h4 , .props-banner h4{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  .wedding-footer .footer .container .footer_arrow1{
+    display: none;
+  }
+
+  .lsiting_rentel .rental-col{
+    gap: 40px 0;
   }
   
 
@@ -1191,6 +1237,9 @@ background-position: center;
   .footer .container .footer_arrow1 {
     width: 100px;
   }
+  .new_props_banner .text-banner{
+    top: 30%;
+  }
 
 }
 
@@ -1274,5 +1323,53 @@ background-position: center;
   .footer p{
     font-size: 15px;
   }
+
+  .wedding-banner .text-banner h1 , .props-banner .text-banner h1{
+    line-height: 40px;
+  }
+
+  .wedding-banner .text-banner , .props-banner .text-banner{
+    padding: 0 20px;
+  }
+
+  .wedding-banner h4 , .props-banner h4{
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  .wedding-banner .text-banner{
+    top: 48%;
+  }
+
+
+  .arrow-down-icon{
+    font-size: 50px !important;
+  }
+
+  .our_product input{
+    font-size: 14px;
+  }
+
+  .our_product .card_props .pera_text{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+  }
+
+  .new_props_banner .text-banner{
+    top: 30%;
+  }
+
+  .our_product iframe{
+    height: 340px;
+  }
+
+  .info_box p{
+    font-size: 15px;
+  }
+
 
 }

@@ -20,7 +20,7 @@ function Listing() {
     return (
         <div style={{ background: "black" }}>
             <div className='container our_product py-5'>
-                <div className='d-flex justify-content-between align-items-center flex-wrap'>
+                <div className='d-flex justify-content-sm-between justify-content-center align-items-center flex-wrap' style={{gap:"20px 40px"}}>
                     <h5 className='m-md-0 my-2'>Our Props</h5>
                     <input onChange={(e) => handleSearch(e.target.value)} type="text" className="inp" placeholder="Search by Name" />
                 </div>

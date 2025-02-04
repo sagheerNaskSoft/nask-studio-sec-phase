@@ -8,7 +8,9 @@ function RentalSpaces() {
     <div>
         <Banner/>
         <Listing/>
-        <Footer/>
+      <div className="rental-footer">
+      <Footer/>
+      </div>
     </div>
   )
 }

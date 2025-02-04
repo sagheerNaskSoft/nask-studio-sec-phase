@@ -86,7 +86,7 @@ function FormMap({snakbar}) {
             
         <div className='container my-5 our_product '>
                     <h5 className='mb-4'>Contact Us</h5>
-                    <div className='row'>
+                    <div className='row pt-4'>
                         <div style={{height:"100%"}} className='col-lg-6 col-md-12 col-12 mb-5'>
                         {/* <div className='d-flex justify-content-center h-100'> */}
                 <div style={{minHeight:"536px"}} className='form_box'>

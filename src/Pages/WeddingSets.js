@@ -8,7 +8,9 @@ function WeddingSets() {
     <div>
         <Banner/>
         <StudioSection/>
-        <Footer/>
+       <div className="wedding-footer">
+       <Footer/>
+       </div>
     </div>
   )
 }
