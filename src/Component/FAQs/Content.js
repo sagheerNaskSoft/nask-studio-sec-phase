@@ -17,7 +17,6 @@ function Content() {
             title: "2. How do I book a session?",
             description: "You can book a session online through the YCloud platform or contact us directly at sales@naskstudio.com."
         },
-
         {
             id: 3,
             title: "3. Do you require an advance payment?",
