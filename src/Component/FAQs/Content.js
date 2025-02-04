@@ -6,7 +6,6 @@ function Content() {
     const [activeIndex, setActiveIndex] = useState(null);
     const [searchQuery, setSearchQuery] = useState('');
 
-    // Sample FAQ data
     const faqData = [
         {
             id: 1,
@@ -56,12 +55,10 @@ function Content() {
         },
     ];
 
-    // Function to toggle visibility of a specific FAQ item
     const handleToggle = (index) => {
         setActiveIndex(activeIndex === index ? null : index);
     };
 
-    // Filter FAQs based on search query
     const filteredFaqs = faqData.filter(faq =>
         faq.title.toLowerCase().includes(searchQuery.toLowerCase())
     );

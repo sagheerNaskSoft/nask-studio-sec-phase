@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { PiArrowBendDownRightLight, PiFlipVerticalLight } from 'react-icons/pi'
 import img1 from '../../Assete/studio/1.webp'
 import img3 from '../../Assete/studio/2.webp'
@@ -10,15 +10,40 @@ import img7 from '../../Assete/studio/7.webp'
 import img8 from '../../Assete/studio/8.webp'
 
 function StudioSection() {
+
+
+  const images = [img1, img2, img3, img4] 
+  const images1 = [img5, img6, img7, img8];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex1, setCurrentIndex1] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex1((prevIndex) => (prevIndex + 1) % images1.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+
+
   return (
     <>
       <div className='service-section p-1 py-sm-5 py-3'>
         <div className='container'>
           <h1 className='text-center my-sm-5 my-3'>Our Pre-Made Sets</h1>
 
-          <div className="row">
+          <div className="row mb-5">
 
-            <div className='col-lg-7 col-md-12 col-12'>
+            <div className='col-lg-7 col-md-12 col-12 d-md-block d-none'>
               <div className='row m-0'>
                 <div className='col-md-6 p-0'>
                   <div className='img1'>
@@ -37,6 +62,29 @@ function StudioSection() {
                   </div>
                 </div>
 
+              </div>
+            </div>
+            <div className='col-lg-7 col-md-12 col-12 d-md-none d-block mb-md-0 mb-5'>
+              <div className="slider-container">
+                {/* Image Display */}
+                <div className="slider">
+                  <div className="row justify-content-center p-0">
+                    <div className="col-11 p-0" style={{ height: "300px" }}>
+                      <img className='w-100 h-100' style={{ objectFit: "cover" }} src={images[currentIndex]} alt={`img-${currentIndex + 1}`} />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Dots Navigation */}
+                <div className="dots-container">
+                  {images.map((_, index) => (
+                    <span
+                      key={index}
+                      className={`dot ${index === currentIndex ? "active" : ""}`}
+                      onClick={() => setCurrentIndex(index)}
+                    ></span>
+                  ))}
+                </div>
               </div>
             </div>
             <div className='col-lg-5 col-md-12 col-12 d-flex'>
@@ -80,8 +128,31 @@ function StudioSection() {
               </div>
             </div>
           </div>
-          <div className="row respocive">
-            <div className='col-lg-5 col-md-12 col-12 d-flex'>
+          <div className="row pt-lg-5 pt-3">
+          <div className='col-lg-7 col-md-12 col-12 d-md-none d-block my-md-0 mb-5 mt-4'>
+              <div className="slider-container">
+                {/* Image Display */}
+                <div className="slider">
+                  <div className="row justify-content-center p-0">
+                    <div className="col-11 p-0" style={{ height: "300px" }}>
+                      <img className='w-100 h-100' style={{ objectFit: "cover" }} src={images1[currentIndex1]} alt={`img-${currentIndex1 + 1}`} />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Dots Navigation */}
+                <div className="dots-container">
+                  {images.map((_, index) => (
+                    <span
+                      key={index}
+                      className={`dot ${index === currentIndex1 ? "active" : ""}`}
+                      onClick={() => setCurrentIndex1(index)}
+                    ></span>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div className='col-lg-5 col-md-12 col-12 d-flex order-lg-first order-last'>
               <div>
                 <h3>CAPTURE YOUR VISION ANYWHERE!</h3>
                 <p>Stunning Locations for Bridal Photography
@@ -121,7 +192,7 @@ function StudioSection() {
                 </button>
               </div>
             </div>
-            <div className='col-lg-7 col-md-12 col-12'>
+            <div className='col-lg-7 col-md-12 col-12 d-md-block d-none order-lg-last order-first'>
               <div className='row m-0'>
                 <div className='col-md-6 p-0'>
                   <div className='img1'>
@@ -139,7 +210,6 @@ function StudioSection() {
                     <img src={img8} alt='img-1' />
                   </div>
                 </div>
-
               </div>
             </div>
           </div>

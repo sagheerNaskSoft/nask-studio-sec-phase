@@ -34,6 +34,7 @@ body {
 .nav-bar ul {
   display: flex;
   align-items: center;
+  margin-bottom: 0;
 }
 
 .nav-bar ul li a {
@@ -64,8 +65,7 @@ body {
   position: relative;
   border: 2px solid white;
   position: relative;
-
-
+  z-index: 3333333;
 }
 
 .home-bar {
@@ -134,6 +134,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 50px;
 }
 
 .text-overlay ul {
@@ -287,6 +288,27 @@ body {
   object-fit: cover;
 
 }
+ .dots-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+ .dot {
+  width: 5px;
+  height: 5px;
+  margin: 0 5px;
+  background-color: gray;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+  .dot.active{
+  background-color: white;
+}
+
+
+
 
 .service-section .col-lg-7 img {
   width: 100%;
@@ -372,6 +394,7 @@ body {
   /* border-radius: 10px 0 10px; */
   margin: auto;
   display: flex;
+  justify-content: center;
 }
 
 .footer .container .footer_arrow1 {
@@ -781,7 +804,7 @@ body {
   background-color: black;
   color: white;
   padding: 10px;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   height: 100vh;
   text-align: center;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.553), rgba(0, 0, 0, 0.548)), 
@@ -794,7 +817,7 @@ background-position: center;
   align-items: center;
   justify-content: center;
   width: 100%;
-  z-index: 111;
+  z-index: 99999999;
   transition: all .35s linear;
 
 }
@@ -845,6 +868,13 @@ background-position: center;
   }
 .nav-bar ul li{
   font-size: 13px;
+}
+.wedding-footer  .footer .container .footer_arrow1 {
+  position: absolute;
+  /* width: 100px; */
+  top: -156px;
+  width: 132px;
+  left: 70px;
 }
 }
 @media screen and (max-width:1100px) {
@@ -1014,21 +1044,108 @@ background-position: center;
 
 
 
+
+
+@media (max-width :992px){
+  
+  .text-overlay h1{
+    font-size: 60px;
+  }
+
+  .text-overlay ul li a {
+    font-size: 22px;
+  }
+
+  .footer .email_pera{
+    padding: 0 40px;
+  }
+
+  .email_pera br{
+    display: none;
+  }
+
+  .wedding-banner .text-banner , .props-banner .text-banner{
+    width: 100%;
+    padding: 0 100px;
+    top: 55%;
+  }
+
+  .new_props_banner .text-banner{
+    top: 47%;
+  }
+
+  .arrow-down-icon{
+    font-size: 75px !important;
+  }
+
+  .our_product .form_box{
+    min-height: 460px !important;
+  }
+
+  .rental-footer .footer .container .footer_arrow1{
+    display: none;
+  }
+
+}
+
+
+@media (max-width :768px){
+  
+  .text-overlay{
+    top: 18%;
+  }
+
+
+  .text-overlay h1{
+    font-size: 50px;
+  }
+
+  .text-overlay ul li a {
+    font-size: 20px;
+  }
+
+  .banner_btn{
+    font-size:14px;
+  }
+
+  .background-container{
+    height: 600px;
+  }
+
+  .wedding-banner .text-banner , .props-banner .text-banner{
+    padding: 0 50px;
+  }
+
+  .wedding-banner h4 , .props-banner h4{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  .wedding-footer .footer .container .footer_arrow1{
+    display: none;
+  }
+
+
+}
+
+
+
 @media (max-width: 600px) {
-  @media screen and (max-width:1100px) {
+  /* @media screen and (max-width:1100px) {
     .grid .card {
       width: calc((100% / 2) - 20px);
       /* display: grid;
       grid-template-columns: repeat(auto-fill, minmax(190px, 2fr));
       gap: 32px; */
-    }
-  }
-  .text-overlay h1 {
+    /* } */
+/* } */
+  /* .text-overlay h1 {
     font-size: 28px;
   }
   .text-overlay{
     margin: 0 1rem;
-  }
+  } */
   .arrow-home{
     display: none;
   }
@@ -1041,9 +1158,7 @@ background-position: center;
     height: 431px;
   }
 
-  .footer .inp_box {
-    width: 300px;
-  }
+ 
 
   .logo {
     width: 163px;
@@ -1118,6 +1233,9 @@ background-position: center;
   .footer .container .footer_arrow1 {
     width: 100px;
   }
+  .new_props_banner .text-banner{
+    top: 30%;
+  }
 
 }
 
@@ -1139,4 +1257,115 @@ background-position: center;
   .faq-questions .parent .description{
      font-size: 13px;
   }
+
+  .footer .email_pera{
+    padding: 0 0;
+    font-size: 15px;
+  }
+
+  .footer .inp_box {
+    width: 280px;
+    margin-top: 40px;
+  }
+
+  .footer .inp_box input{
+    width: 180px;
+  }
+
+  .footer .inp_box button{
+    width: 100px;
+  }
+
+  .service-section .services_ul{
+    gap: 10px 0;
+    margin: 40px 0 0 0;
+  }
+
+  .service-section .services_ul li{
+    width: 100%;
+  }
+
+  .shoot-section .row .col-lg-6 p{
+    line-clamp: 8;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 8;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .text-overlay{
+    gap: 0;
+  }
+
+  .text-overlay h1 , .text-overlay p{
+    text-align: center;
+  }
+
+.banner_btn{
+    margin: 0  auto;
+  }
+
+  .text-overlay{
+    margin: 0 1rem;
+  }
+   .text-overlay h1 {
+    font-size: 28px;
+  }
+  .close-minu-button button{
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .footer p{
+    font-size: 15px;
+  }
+
+  .wedding-banner .text-banner h1 , .props-banner .text-banner h1{
+    line-height: 40px;
+  }
+
+  .wedding-banner .text-banner , .props-banner .text-banner{
+    padding: 0 20px;
+  }
+
+  .wedding-banner h4 , .props-banner h4{
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  .wedding-banner .text-banner{
+    top: 48%;
+  }
+
+
+  .arrow-down-icon{
+    font-size: 50px !important;
+  }
+
+  .our_product input{
+    font-size: 14px;
+  }
+
+  .our_product .card_props .pera_text{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+  }
+
+  .new_props_banner .text-banner{
+    top: 30%;
+  }
+
+  .our_product iframe{
+    height: 340px;
+  }
+
+  .info_box p{
+    font-size: 15px;
+  }
+
+
 }

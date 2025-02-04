@@ -1,17 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { rental_space } from '../../Context/dummy';
 import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
 import { PiFlipVerticalLight } from 'react-icons/pi';
 
 function Listing() {
+
+
+    const [containerClass, setContainerClass] = useState("container");
+
+    useEffect(() => {
+      const updateContainerClass = () => {
+        setContainerClass(window.innerWidth <= 992 ? "container-fluid" : "container");
+      };
+  
+      updateContainerClass(); // Initial check
+      window.addEventListener("resize", updateContainerClass);
+  
+      return () => window.removeEventListener("resize", updateContainerClass);
+    }, []);
+    
     return (
         <div style={{ background: "black", color: "white" }} className='listing_rental'>
-            <div className='container'>
+            <div className={containerClass}>
                 <div className='row m-0'>
                     {rental_space?.map((item, i) => (
-                        <div className='col-12 d-flex flex-column flex-lg-row align-items-center my-5' key={i}>
+                        <div className='col-12 d-flex flex-column flex-md-row align-items-center my-md-5 mt-5 mb-3' key={i}>
                             {/* Text Content */}
-                            <div className={`col-lg-7 d-flex align-items-center px-3 ${i % 2 === 0 ? "order-lg-2" : "order-lg-1"}`}>
+                            <div className={`col-lg-7 col-md-6 d-flex align-items-center px-3 mt-md-0 mt-5 ${i % 2 === 0 ? "order-md-2 order-2" : "order-md-1 order-2"}`}>
                                 <div>
                                     <h6 className='studio_heading'>{item?.title}</h6>
                                     {item?.fixed_price && <p className='sub_title_studio'>Price: {item?.fixed_price}</p>}
@@ -68,7 +83,7 @@ function Listing() {
                             </div>
 
                             {/* Image */}
-                            <div className={`col-lg-5 d-flex justify-content-center ${i % 2 === 0 ? "order-lg-1" : "order-lg-2"}`}>
+                            <div className={`col-lg-5 col-md-6 col-10 d-flex justify-content-center ${i % 2 === 0 ? "order-md-1 order-1" : "order-md-2 order-1"}`}>
                                 <img src={item?.image} alt="..." className='img w-100 rounded' />
                             </div>
                         </div>
