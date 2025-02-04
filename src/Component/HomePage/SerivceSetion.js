@@ -15,7 +15,7 @@ function SerivceSetion() {
                 <div className="row">
                     <div className='col-lg-4 col-md-12 col-12 d-flex align-items-center'>
                         <div>
-                            <h3>What We Do</h3>
+                            <h3 className='my-3'>What We Do</h3>
                             <p>We provide Creative photography for editorial, PR, celebrity and lifestyle assignments Pakistan Wide.
                                 We provide Creative photography for editorial, PR, celebrity and lifestyle assignments Pakistan Wide.
                                 We provide Creative photography for editorial, PR, celebrity and lifestyle assignments Pakistan Wide.

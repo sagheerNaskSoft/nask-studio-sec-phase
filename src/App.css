@@ -42,6 +42,7 @@ body {
 .nav-bar ul li {
   list-style: none;
   margin: 0 1rem;
+  white-space: nowrap;
 }
 
 .logo {
@@ -640,11 +641,16 @@ body {
   transform: translate(-50%, -50%);
   /* Correctly centers the element */
 }
-
 .grid {
-  display: grid;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.grid .card {
+  width: calc((100% / 5) - 20px);
+  /* display: grid;
   grid-template-columns: repeat(auto-fill, minmax(190px, 2fr));
-  gap: 32px;
+  gap: 32px; */
 }
 
 .our_product h5 {
@@ -824,11 +830,73 @@ body {
   padding-top: 20px;
 }
 
+.contact-form{
+  /* width: 200;0 */
+  background: black;
+}
+
+@media screen and (max-width:1200px) {
+  .nav-bar .logo_bar {
+    width: 180px;
+  }
+.nav-bar ul li{
+  font-size: 13px;
+}
+}
+@media screen and (max-width:1100px) {
+  .grid .card {
+    width: calc((100% / 4) - 20px);
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 2fr));
+    gap: 32px; */
+  }
+}
+@media screen and (max-width:999px) {
+  .grid .card {
+    width: calc((100% / 3) - 20px);
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 2fr));
+    gap: 32px; */
+  }
+}
 
 
+
+@media screen and (max-width:768px) {
+  .text-overlay ul{
+    display: none;
+  }
+  .text-overlay h1 br{
+    font-size: 25px;
+    display: none;
+  }
+  @media screen and (max-width:1100px) {
+    .grid .card {
+      width: calc((100% / 2) - 20px);
+      /* display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(190px, 2fr));
+      gap: 32px; */
+    }
+  }
+  
+}
 @media (max-width: 600px) {
+  @media screen and (max-width:1100px) {
+    .grid .card {
+      width: calc((100% / 2) - 20px);
+      /* display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(190px, 2fr));
+      gap: 32px; */
+    }
+  }
   .text-overlay h1 {
     font-size: 28px;
+  }
+  .text-overlay{
+    margin: 0 1rem;
+  }
+  .arrow-home{
+    display: none;
   }
 
   .text-overlay ul {
@@ -875,10 +943,7 @@ body {
     list-style: none;
   }
 
-  .our_product .card_props {
-    width: 276px;
-    margin: auto;
-  }
+
   .lsiting_rentel .row .img{
     height: unset;
   }

@@ -20,7 +20,12 @@ function Home() {
         <Banner mousePosition={mousePosition}/>
         <ShootSection mousePosition={mousePosition}/>
         <SerivceSetion/>
+        <div className='d-lg-block d-none'>
         <Footer/>
+        </div>
+        <div className='propfooter d-lg-none d-block'>
+        <Footer/>
+        </div>
         <div
       className="animated-circle"
       style={{

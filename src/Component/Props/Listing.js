@@ -27,7 +27,7 @@ function Listing() {
                 <div className='grid my-4'>
                     {filterproducts?.map((item) => {
                         return (
-                            <Card onClick={() => handleShow(item?.image)} style={{ width: "230px" }} className='card card_props border-0 my-2'>
+                            <Card onClick={() => handleShow(item?.image)}  className='card card_props border-0 my-2'>
                                 < FallBackImage src={item?.image
                                 } fallbackSrc={item?.image} />
                                 <Card.Body className='p-0 mt-3'>
