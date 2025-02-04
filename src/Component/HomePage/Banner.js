@@ -134,8 +134,10 @@ const naviagte=useNavigate()
 
                     </h1>
                     <p>{images[currentIndex].pera}</p>
-                    <button onClick={()=>naviagte("/contact-us")} className='banner_btn'>Contact US <PiFlipVerticalLight className="btn_icon" />
-                    </button>
+                   <div className="d-flex justify-content-sm-start justify-content-center mt-sm-0 mt-4">
+                   <button onClick={()=>naviagte("/contact-us")} className='banner_btn'>Contact US <PiFlipVerticalLight className="btn_icon" />
+                   </button>
+                   </div>
                 </div>
                 <div>
                     <ul>

@@ -8,8 +8,8 @@ import img3 from '../../Assete/studio/20-perfect-aesthetic-photo-ideas-for-20241
 function ShootSection({ mousePosition }) {
     return (
         <div className='shoot-section p-1'>
-            <div className='container'>
-                <h1 className='text-center my-sm-5 my-3'>Best Shoot</h1>
+            <div className='container px-sm-3 px-4'>
+                <h1 className='text-center my-sm-5 mt-5 mb-4'>Best Shoot</h1>
                 <div className='row '>
                     <div className='col-lg-6 py-sm-5 py-0'>
                         <div class="col-lg-6">
@@ -54,7 +54,7 @@ function ShootSection({ mousePosition }) {
                 </div>
                 <div className='row'>
                     <div className='col-lg-6 py-sm-5 py-0'>
-                        <div class="front-img d-lg-none d-flex justify-content-between">
+                        <div class="front-img d-lg-none d-flex justify-content-between mb-5">
                             <img className='w-100' src={img2} alt='.../' />
                         </div>
                         <div className='mt-sm-0 mt-5'>
@@ -76,7 +76,7 @@ function ShootSection({ mousePosition }) {
                     </div>
                     <div className='col-lg-6 py-5'>
                         <div class="col-lg-6">
-                            <div class="front-img w-100 h-100 d-md-none d-block mb-5">
+                            <div class="front-img w-100 h-100 d-lg-none d-block mb-5">
                                 <img className='w-100 h-75' src={img3} alt='.../' />
                             </div>
                         </div>
