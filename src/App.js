@@ -9,6 +9,7 @@ import ProductionService from './Pages/ProductionService';
 import PropsPage from './Pages/PropsPage';
 import RentalSpaces from './Pages/RentalSpaces';
 import Contactus from './Pages/Contactus';
+import FAQs from './Pages/FAQs';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
         <Route path='/props' element={<PropsPage />} />
         <Route path='/rental-spaces' element={<RentalSpaces />} />
         <Route path='/contactus' element={<Contactus />} />
+        <Route path='/faqs' element={<FAQs />} />
       </Routes>
     </BrowserRouter>
 
