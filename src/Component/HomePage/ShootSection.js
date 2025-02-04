@@ -22,7 +22,7 @@ function ShootSection({ mousePosition }) {
                             <p className='mt-3'>we believe in capturing the essence of the moment through our lens, curating a collection of the best shots that tell a compelling story. Trust us to deliver a portfolio of unforgettable moments, where every shot is a masterpiece in its own right.
                                 we believe in capturing the essence of the moment through our lens, curating a collection of the best shots that tell a compelling story. Trust us to deliver a portfolio of unforgettable moments, where every shot is a masterpiece in its own right.
                             </p>
-                            <button className='banner_btn'>Explor More  <PiFlipVerticalLight className="btn_icon" /></button>
+                            <button className='banner_btn'>Explore More  <PiFlipVerticalLight className="btn_icon" /></button>
                             <img src={arrow} className='arrow-home'  style={{ transform: "rotate(180deg)" }} alt='arrow' />
                         </div>
                     </div>
@@ -46,7 +46,7 @@ function ShootSection({ mousePosition }) {
                             <p className='mt-3'>we believe in capturing the essence of the moment through our lens, curating a collection of the best shots that tell a compelling story. Trust us to deliver a portfolio of unforgettable moments, where every shot is a masterpiece in its own right.
                                 we believe in capturing the essence of the moment through our lens, curating a collection of the best shots that tell a compelling story. Trust us to deliver a portfolio of unforgettable moments, where every shot is a masterpiece in its own right.
                             </p>
-                            <button className='banner_btn'>Explor More  <PiFlipVerticalLight className="btn_icon" /></button>
+                            <button className='banner_btn'>Explore More  <PiFlipVerticalLight className="btn_icon" /></button>
                             <img src={arrow} className='arrow-home'  style={{ transform: "rotate(180deg)" }}  alt='arrow' />
                         </div>
                     </div>
@@ -62,7 +62,7 @@ function ShootSection({ mousePosition }) {
                             <p className='mt-3'>we believe in capturing the essence of the moment through our lens, curating a collection of the best shots that tell a compelling story. Trust us to deliver a portfolio of unforgettable moments, where every shot is a masterpiece in its own right.
                                 we believe in capturing the essence of the moment through our lens, curating a collection of the best shots that tell a compelling story. Trust us to deliver a portfolio of unforgettable moments, where every shot is a masterpiece in its own right.
                             </p>
-                            <button className='banner_btn'>Explor More  <PiFlipVerticalLight className="btn_icon" /></button>
+                            <button className='banner_btn'>Explore More  <PiFlipVerticalLight className="btn_icon" /></button>
                             <img src={arrow} className='arrow-home'  style={{ transform: "rotate(180deg)" }} alt='arrow' />
                         </div>
                     </div>
@@ -85,7 +85,7 @@ function ShootSection({ mousePosition }) {
                             <p className='mt-3'>we believe in capturing the essence of the moment through our lens, curating a collection of the best shots that tell a compelling story. Trust us to deliver a portfolio of unforgettable moments, where every shot is a masterpiece in its own right.
                                 we believe in capturing the essence of the moment through our lens, curating a collection of the best shots that tell a compelling story. Trust us to deliver a portfolio of unforgettable moments, where every shot is a masterpiece in its own right.
                             </p>
-                            <button className='banner_btn'>Explor More  <PiFlipVerticalLight className="btn_icon" /></button>
+                            <button className='banner_btn'>Explore More  <PiFlipVerticalLight className="btn_icon" /></button>
                             <img src={arrow} className='arrow-home'  style={{ transform: "rotate(180deg)" }} alt='arrow' />
                         </div>
                     </div>
