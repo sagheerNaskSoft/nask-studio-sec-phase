@@ -1042,6 +1042,24 @@ background-position: center;
   overflow: visible;
 }
 
+/* /////////////////////////////////////// props modal  */
+
+
+
+
+.modal-footer .booking_btn{
+  background: black;
+    color: white;
+    padding: .4rem 0;
+    width: 140px;
+    border-radius: 10px 0 10px;
+    border: none;
+    transition: all 0.35s linear;
+    position: relative;
+    border: 2px solid white;
+    z-index: 3333333;
+    cursor: pointer;
+}
 
 
 
