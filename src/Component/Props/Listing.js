@@ -20,14 +20,14 @@ function Listing() {
     return (
         <div style={{ background: "black" }}>
             <div className='container our_product py-5'>
-                <div className='d-flex justify-content-between align-items-center flex-wrap'>
+                <div className='d-flex justify-content-sm-between justify-content-center align-items-center flex-wrap' style={{gap:"20px 40px"}}>
                     <h5 className='m-md-0 my-2'>Our Props</h5>
                     <input onChange={(e) => handleSearch(e.target.value)} type="text" className="inp" placeholder="Search by Name" />
                 </div>
                 <div className='grid my-4'>
                     {filterproducts?.map((item) => {
                         return (
-                            <Card onClick={() => handleShow(item?.image)} style={{ width: "230px" }} className='card card_props border-0 my-2'>
+                            <Card onClick={() => handleShow(item?.image)}  className='card card_props border-0 my-2'>
                                 < FallBackImage src={item?.image
                                 } fallbackSrc={item?.image} />
                                 <Card.Body className='p-0 mt-3'>

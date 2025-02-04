@@ -9,7 +9,7 @@ import img7 from '../../Assete/HomaBanner/7.jpg'
 import img8 from '../../Assete/HomaBanner/8.jpg'
 import logo from '../../Assete/logo/Naskstudio (R).svg'
 import { HiMiniBars3BottomRight } from 'react-icons/hi2'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { TfiLayoutLineSolid } from 'react-icons/tfi'
 import { PiFlipVerticalLight } from 'react-icons/pi'
 
@@ -63,7 +63,7 @@ function Banner({ mousePosition }) {
         },
 
     ];
-
+const naviagte=useNavigate()
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -116,7 +116,7 @@ function Banner({ mousePosition }) {
                                     <Link to={'/production-service'}>Producation Services</Link>
                                 </li>
                                 <li>
-                                    <Link>Contact Us</Link>
+                                    <Link className='/contact-us'>Contact Us</Link>
                                 </li>
                                 <div className='close-minu-button'>
                                     <button onClick={toggleMenu}>close Menu</button>
@@ -134,8 +134,10 @@ function Banner({ mousePosition }) {
 
                     </h1>
                     <p>{images[currentIndex].pera}</p>
-                    <button className='banner_btn'>Contact US <PiFlipVerticalLight className="btn_icon" />
-                    </button>
+                   <div className="d-flex justify-content-sm-start justify-content-center mt-sm-0 mt-4">
+                   <button onClick={()=>naviagte("/contact-us")} className='banner_btn'>Contact US <PiFlipVerticalLight className="btn_icon" />
+                   </button>
+                   </div>
                 </div>
                 <div>
                     <ul>
@@ -155,7 +157,7 @@ function Banner({ mousePosition }) {
                             <Link to={'/production-service'}>Producation Services</Link>
                         </li>
                         <li>
-                            <Link>Contact Us</Link>
+                            <Link to={'/contact-us'}>Contact Us</Link>
                         </li>
 
                     </ul>

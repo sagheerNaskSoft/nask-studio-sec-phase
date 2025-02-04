@@ -13,7 +13,7 @@ function NavBar() {
     return (
         
         <>
-        <div className='nav-bar container d-sm-flex d-none'>
+        <div className='nav-bar container d-lg-flex d-none'>
             <img className='logo_bar' src={logo} alt='logo' />
             <ul>
                 <li><Link to={'/'}>Home</Link></li>
@@ -21,11 +21,11 @@ function NavBar() {
                 <li><Link to={'/rental-spaces'}>Rental Spaces</Link></li>
                 <li><Link to={'/props'}>Props</Link></li>
                 <li><Link to={'/production-service'}>Producation Services</Link></li>
-                <li><Link to={'/'}><button className='banner_btn'>Contact US <PiFlipVerticalLight className="btn_icon"/></button></Link></li>
+                <li><Link to={'/contact-us'}><button className='banner_btn'>Contact US <PiFlipVerticalLight className="btn_icon"/></button></Link></li>
             </ul>
         </div>
 
-        <div className='home-bar d-sm-none  d-flex justify-content-between px-3'>
+        <div className='home-bar d-lg-none  d-flex justify-content-between px-3'>
                 <img className='logo' src={logo} alt='logo' />
                 <HiMiniBars3BottomRight className='icons' onClick={toggleMenu} />
 
@@ -51,7 +51,7 @@ function NavBar() {
                                     <Link to={'/production-service'}>Producation Services</Link>
                                 </li>
                                 <li>
-                                    <Link>Contact Us</Link>
+                                    <Link to={'/contact-us'}>Contact Us</Link>
                                 </li>
                                 <div className='close-minu-button'>
                                     <button onClick={toggleMenu}>close Menu</button>

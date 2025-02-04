@@ -25,7 +25,7 @@ function Footer() {
                 <AiFillTikTok className="footer_icons" />
                 <FaYoutube className="footer_icons" />
                 </div>
-                <p className='text-center' style={{color:"white"}}>+92 305 1115 501<span className='mx-sm-2 mx-0'><div class="line">|</div></span>sale@naskstudio.com
+                <p className='text-center' style={{color:"white"}}>+92 305 1115 501<p >sale@naskstudio.com</p>
                 </p>
                 <p className='text-center' style={{color:"white"}}>Mon-Sat 9:00 am to 10:00pm
                 </p>
