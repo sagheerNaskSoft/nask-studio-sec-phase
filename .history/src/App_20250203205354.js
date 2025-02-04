@@ -10,7 +10,6 @@ import PropsPage from './Pages/PropsPage';
 import RentalSpaces from './Pages/RentalSpaces';
 import Contactus from './Pages/Contactus';
 import Privacy from './Pages/Privacy';
-import Termscondition from './Pages/Termscondition';
 
 function App() {
 
@@ -27,7 +26,6 @@ function App() {
         <Route path='/rental-spaces' element={<RentalSpaces />} />
         <Route path='/contactus' element={<Contactus />} />
         <Route path='/privacy' element={<Privacy/>} />
-        <Route path='/termscondion' element={<Termscondition/>} />
       </Routes>
     </BrowserRouter>
 

@@ -880,14 +880,9 @@ body {
 }
 
 .terms h3 {
-  font-family: var(--font-family);
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 63.98px;
   text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: white;
+  margin-bottom: 50px;
+  font-size: 20px;
 }
 
 .terms h4 {
@@ -898,7 +893,7 @@ body {
   text-align: justified;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: white;
+  margin-top: 30px;
 }
 
 .terms p {
@@ -911,8 +906,7 @@ body {
   font-family: var(--font-family);
   margin-bottom: 0;
 }
-
-.terms ul li {
+.terms ul li{
   font-family: var(--font-family);
   font-size: 16px;
   font-weight: 500;
@@ -922,7 +916,6 @@ body {
   text-decoration-skip-ink: none;
   margin-top: 25px;
 }
-
 
 @media (max-width: 600px) {
   .text-overlay h1 {
@@ -1017,18 +1010,6 @@ body {
 
   .footer .container .footer_arrow1 {
     width: 100px;
-  }
-  .terms h3{
-    font-size: 23px;
-  }
-  .terms p{
-    font-size: 15px;
-  }
-  .Privace{
-    padding: 0;
-  }
-  .Privace p{
-    font-size: 15px;
   }
 
 }

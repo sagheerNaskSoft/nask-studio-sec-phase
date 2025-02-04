@@ -51,7 +51,8 @@ function Listing() {
                         <Button className={"booking_btn"} text="Close" submit={handleClose} />
                     </Modal.Footer>
                 </Modal>
-            </div>
+            </div >
+
         </div>
     )
 }

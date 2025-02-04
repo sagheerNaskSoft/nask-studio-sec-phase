@@ -52,6 +52,7 @@ function Listing() {
                     </Modal.Footer>
                 </Modal>
             </div>
+
         </div>
     )
 }

@@ -828,8 +828,8 @@ body {
 
 .Privace {
   padding: 30px;
-  /* margin: 2rem; */
-  background-color: rgba(0, 0, 0, 0.973);
+  margin: 2rem;
+  background-color: black;
   color: white;
 }
 
@@ -869,57 +869,7 @@ body {
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  margin-top: 25px;
-}
-
-/* =============================terms&condition=============== */
-
-.terms-condition {
-  /* background-color: rgba(0, 0, 0, 0.973); */
-  color: white;
-}
-
-.terms h3 {
-  font-family: var(--font-family);
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 63.98px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: white;
-}
-
-.terms h4 {
-  font-family: var(--font-family);
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 30px;
-  text-align: justified;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: white;
-}
-
-.terms p {
-  font-size: 17px;
-  font-weight: 500;
-  line-height: normal;
-  text-align: justified;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  font-family: var(--font-family);
-  margin-bottom: 0;
-}
-
-.terms ul li {
-  font-family: var(--font-family);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 32px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  color: #313839;
   margin-top: 25px;
 }
 
@@ -1017,18 +967,6 @@ body {
 
   .footer .container .footer_arrow1 {
     width: 100px;
-  }
-  .terms h3{
-    font-size: 23px;
-  }
-  .terms p{
-    font-size: 15px;
-  }
-  .Privace{
-    padding: 0;
-  }
-  .Privace p{
-    font-size: 15px;
   }
 
 }

@@ -923,7 +923,6 @@ body {
   margin-top: 25px;
 }
 
-
 @media (max-width: 600px) {
   .text-overlay h1 {
     font-size: 28px;
@@ -1022,12 +1021,6 @@ body {
     font-size: 23px;
   }
   .terms p{
-    font-size: 15px;
-  }
-  .Privace{
-    padding: 0;
-  }
-  .Privace p{
     font-size: 15px;
   }
 
