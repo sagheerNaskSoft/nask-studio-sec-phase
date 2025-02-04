@@ -34,6 +34,7 @@ body {
 .nav-bar ul {
   display: flex;
   align-items: center;
+  margin-bottom: 0;
 }
 
 .nav-bar ul li a {
