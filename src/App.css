@@ -784,9 +784,11 @@ body {
   border-radius: 5px;
   height: 100vh;
   text-align: center;
-  background-image: url(../src/Assete/studio/a-shadow-of-a-boy-carrying-the-camera-with-red-sky-behind.webp);
-  background-position: center;
-  background-size: cover;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.553), rgba(0, 0, 0, 0.548)), 
+  url(../src/Assete/studio/a-shadow-of-a-boy-carrying-the-camera-with-red-sky-behind.webp);
+background-size: cover;
+background-position: center;
+
   object-fit: cover;
   display: flex;
   align-items: center;
