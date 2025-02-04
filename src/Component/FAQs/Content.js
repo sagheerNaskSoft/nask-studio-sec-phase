@@ -91,10 +91,10 @@ function Content() {
                                 <div className="col-12 p-0" style={{ marginTop: '45px' }}>
                                     {filteredFaqs.length > 0 ? (
                                         filteredFaqs.map((faq, index) => (
-                                            <div key={faq.id} className="faq-questions my-3">
+                                            <div key={faq.id} className="faq-questions  my-3"  onClick={() => handleToggle(index)}>
                                                 <div className="parent">
                                                     <div>{faq.title}</div>
-                                                    <span onClick={() => handleToggle(index)}>
+                                                    <span>
                                                         {activeIndex === index ? (
                                                             <FaMinus style={{ fontSize: '18px', color: "rgb(56, 53, 53)", marginBottom: '3px' }} />
                                                         ) : (
