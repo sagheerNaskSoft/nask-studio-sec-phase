@@ -300,7 +300,7 @@ export const products = [
 ];
 export const rental_space=[
     {
-        image:imge10,
+        image:imge9,
         title:"MAKEUP ROOM",
         text:"Please feel free to contact us now via WhatsApp or call us at +92 305 111 5501 to book.",
         fixed_price: "Rs.5,000",
@@ -380,7 +380,7 @@ export const rental_space=[
         eight_hours_price: "Rs.25,000",
     },
     {
-        image:imge9,
+        image:imge10,
         title:"INFINITY",
         text:"Please feel free to contact us now via WhatsApp or call us at +92 305 111 5501 to book.",
         four_hours_price: "Rs.15,000",

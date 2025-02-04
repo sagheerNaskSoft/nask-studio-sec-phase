@@ -9,9 +9,9 @@ function ShootSection({ mousePosition }) {
     return (
         <div className='shoot-section p-1'>
             <div className='container px-sm-3 px-4'>
-                <h1 className='text-center my-sm-5 mt-5 mb-4'>Best Shoot</h1>
+                <h1 className='text-center my-md-5 pt-md-0 pt-4 pb-3 mt-5 mb-5'>Best Shoot</h1>
                 <div className='row '>
-                    <div className='col-lg-6 py-sm-5 py-0'>
+                    <div className='col-lg-6 py-md-5 pt-0 pb-4'>
                         <div class="col-lg-6">
                             <div class="front-img d-lg-none d-block mb-5">
                                 <img className='w-100' src={img} alt='.../' />
@@ -35,7 +35,7 @@ function ShootSection({ mousePosition }) {
                     <div className='col-lg-6'>
                         <div className='img-back'></div>
                     </div>
-                    <div className='col-lg-6 py-5'>
+                    <div className='col-lg-6 py-md-5 pt-0 pb-4'>
                         <div class="col-lg-6">
                             <div class="front-img d-lg-none d-block mb-5">
                                 <img className='w-100' src={img1} alt='.../' />
@@ -53,7 +53,7 @@ function ShootSection({ mousePosition }) {
 
                 </div>
                 <div className='row'>
-                    <div className='col-lg-6 py-sm-5 py-0'>
+                    <div className='col-lg-6 py-md-5 pt-0 pb-4'>
                         <div class="front-img d-lg-none d-flex justify-content-between mb-5">
                             <img className='w-100' src={img2} alt='.../' />
                         </div>

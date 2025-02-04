@@ -25,7 +25,7 @@ function SerivceSetion() {
 
 
     return (
-        <div className='service-section p-1 py-5'>
+        <div className='service-section p-1 py-md-5 pt-3 pb-5'>
             <div className='container px-sm-3 px-4'>
                 <h1 className='text-center my-sm-5 mt-4 mb-5'>Our Services</h1>
 
@@ -48,7 +48,7 @@ function SerivceSetion() {
                         </div>
                     </div>
                     <div className='col-lg-8 col-md-12 col-12'>
-                        <div className='row m-0 d-sm-flex d-none'>
+                        <div className='row m-0 d-md-flex d-none'>
                             <div className='col-md-4 p-0'>
                                 <div className='img1'>
                                     <img src={img1} alt='img-1' />
@@ -74,7 +74,7 @@ function SerivceSetion() {
                                 </div>
                             </div>
                         </div>
-                        <div className="div d-sm-none d-block mt-sm-0 mt-5">
+                        <div className="div d-md-none d-block mt-md-0 mt-5">
                             <div className="slider-container">
                                 {/* Image Display */}
                                 <div className="slider">

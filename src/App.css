@@ -373,7 +373,11 @@ body {
   display: flex;
   overflow: hidden;
   border: 1px solid white;
+  overflow: hidden;
+ 
 }
+
+
 
 .footer .inp_box input {
   width: 300px;
@@ -397,8 +401,17 @@ body {
   margin: auto;
   display: flex;
   justify-content: center;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
+.footer .inp_box button:hover{
+  /* background-color: rgba(255, 255, 255, 0.568); */
+  background-color: black;
+  color: white;
+  transform: scale(1.05);
+}
+ 
 .footer .container .footer_arrow1 {
   position: absolute;
   /* width: 100px; */
