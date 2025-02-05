@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFacebook, FaYoutube } from 'react-icons/fa'
+import { FaFacebook, FaLinkedin, FaPinterest, FaTwitterSquare, FaYoutube } from 'react-icons/fa'
 import { AiFillTikTok } from 'react-icons/ai'
 import { FaSquareInstagram } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
@@ -20,10 +20,30 @@ function Footer() {
         <hr style={{borderColor:"white"}} className='my-5'/>
         </div>
         <div className='container '>
-                <div className='d-flex justify-content-center'><FaFacebook className="footer_icons" />
-                <FaSquareInstagram className="footer_icons" />
-                <AiFillTikTok className="footer_icons" />
-                <FaYoutube className="footer_icons" />
+                <div className='d-flex justify-content-center flex-wrap'>
+                  <a target="_blank" rel="noreferrer" href='https://www.facebook.com/naskstudios'>
+                <FaFacebook className="footer_icons" />
+                  </a>
+                  <a target="_blank" rel="noreferrer" href='https://www.instagram.com/naskstudio_officials/'>
+                  <FaSquareInstagram className="footer_icons" />
+                  </a>
+                  <a target="_blank" rel="noreferrer" href='https://www.tiktok.com/@naskstudio'>
+                  <AiFillTikTok className="footer_icons" />
+
+                  </a>
+                  <a target="_blank" rel="noreferrer" href='https://www.youtube.com/@naskstudioofficial'>
+                  <FaYoutube className="footer_icons" />
+
+                  </a>
+                  <a target="_blank" rel="noreferrer" href='https://twitter.com/NaskStudio'>
+                  <FaTwitterSquare className="footer_icons" />
+                  </a>
+                  <a target="_blank" rel="noreferrer" href='https://www.pinterest.co.uk/naskstudio/'>
+                  <FaPinterest  className="footer_icons"/>
+                  </a>
+                  <a target="_blank" rel="noreferrer" href='https://www.linkedin.com/company/naskstudio/'>
+                  <FaLinkedin className="footer_icons" />
+                  </a>
                 </div>
                 <p className='text-center' style={{color:"white"}}>+92 305 1115 501<p >sale@naskstudio.com</p>
                 </p>

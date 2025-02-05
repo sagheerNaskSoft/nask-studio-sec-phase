@@ -14,7 +14,9 @@ function NavBar() {
         
         <>
         <div className='nav-bar container d-lg-flex d-none'>
+            <Link to={'/'}>
             <img className='logo_bar' src={logo} alt='logo' />
+            </Link>
             <ul>
                 <li><Link to={'/'}>Home</Link></li>
                 <li><Link to={'/wedding-sets'}>Set For Wedding Shoot</Link></li>
@@ -26,7 +28,9 @@ function NavBar() {
         </div>
 
         <div className='home-bar d-lg-none  d-flex justify-content-between px-3'>
+            <Link to={'/'}>
                 <img className='logo' src={logo} alt='logo' />
+            </Link>
                 <HiMiniBars3BottomRight className='icons' onClick={toggleMenu} />
 
                 {/* Your Menu */}

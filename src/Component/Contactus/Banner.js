@@ -1,6 +1,5 @@
 import React from 'react'
 import NavBar from '../NavFooter/NavBar'
-import { IoIosArrowRoundDown } from 'react-icons/io'
 
 export default function Banner() {
   return (

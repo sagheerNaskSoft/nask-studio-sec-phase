@@ -288,12 +288,13 @@ body {
   object-fit: cover;
 
 }
- .dots-container {
+
+.dots-container {
   text-align: center;
   margin-top: 10px;
 }
 
- .dot {
+.dot {
   width: 5px;
   height: 5px;
   margin: 0 5px;
@@ -303,7 +304,8 @@ body {
   cursor: pointer;
   transition: background 0.3s;
 }
-  .dot.active{
+
+.dot.active {
   background-color: white;
 }
 
@@ -666,11 +668,13 @@ body {
   transform: translate(-50%, -50%);
   /* Correctly centers the element */
 }
+
 .grid {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .grid .card {
   width: calc((100% / 5) - 20px);
   /* display: grid;
@@ -780,7 +784,7 @@ body {
 
 }
 
-.propfooter svg {
+.propfooter .footer_arrow1 {
   display: none;
 }
 
@@ -807,10 +811,10 @@ body {
   /* border-radius: 5px; */
   height: 100vh;
   text-align: center;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.553), rgba(0, 0, 0, 0.548)), 
-  url(../src/Assete/studio/a-shadow-of-a-boy-carrying-the-camera-with-red-sky-behind.webp);
-background-size: cover;
-background-position: center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.553), rgba(0, 0, 0, 0.548)),
+    url(../src/Assete/studio/a-shadow-of-a-boy-carrying-the-camera-with-red-sky-behind.webp);
+  background-size: cover;
+  background-position: center;
 
   object-fit: cover;
   display: flex;
@@ -857,7 +861,7 @@ background-position: center;
   padding-top: 20px;
 }
 
-.contact-form{
+.contact-form {
   /* width: 200;0 */
   background: black;
 }
@@ -866,17 +870,20 @@ background-position: center;
   .nav-bar .logo_bar {
     width: 180px;
   }
-.nav-bar ul li{
-  font-size: 13px;
+
+  .nav-bar ul li {
+    font-size: 13px;
+  }
+
+  .wedding-footer .footer .container .footer_arrow1 {
+    position: absolute;
+    /* width: 100px; */
+    top: -156px;
+    width: 132px;
+    left: 70px;
+  }
 }
-.wedding-footer  .footer .container .footer_arrow1 {
-  position: absolute;
-  /* width: 100px; */
-  top: -156px;
-  width: 132px;
-  left: 70px;
-}
-}
+
 @media screen and (max-width:1100px) {
   .grid .card {
     width: calc((100% / 4) - 20px);
@@ -885,6 +892,7 @@ background-position: center;
     gap: 32px; */
   }
 }
+
 @media screen and (max-width:999px) {
   .grid .card {
     width: calc((100% / 3) - 20px);
@@ -897,13 +905,15 @@ background-position: center;
 
 
 @media screen and (max-width:768px) {
-  .text-overlay ul{
+  .text-overlay ul {
     display: none;
   }
-  .text-overlay h1 br{
+
+  .text-overlay h1 br {
     font-size: 25px;
     display: none;
   }
+
   @media screen and (max-width:1100px) {
     .grid .card {
       width: calc((100% / 2) - 20px);
@@ -912,8 +922,9 @@ background-position: center;
       gap: 32px; */
     }
   }
-  
+
 }
+
 /* ///////////////////////////////////////// FAQs  //////////////////////////// */
 
 
@@ -927,7 +938,7 @@ background-position: center;
 
 
 .faq-content {
-  background-color:black;
+  background-color: black;
   border-radius: 10px;
 }
 
@@ -965,7 +976,7 @@ background-position: center;
   width: 100%;
 }
 
-.faq-content .search-bar input::placeholder{
+.faq-content .search-bar input::placeholder {
   font-family: var(--font-family);
   font-size: 16px;
   font-weight: 400;
@@ -993,6 +1004,7 @@ background-position: center;
   display: flex;
   justify-content: space-between;
   gap: 0 20px;
+  cursor: pointer;
 }
 
 .faq-questions .parent div {
@@ -1036,19 +1048,47 @@ background-position: center;
   line-height: 24px;
   text-align: left;
   color: #646c6d;
-  margin:14px 0 1rem 0;
+  margin: 14px 0 1rem 0;
   transition: all 0.4s linear;
   height: 100%;
   overflow: visible;
 }
 
+/* /////////////////////////////////////// props modal  */
 
 
 
 
-@media (max-width :992px){
-  
-  .text-overlay h1{
+.modal-footer .booking_btn {
+  background: black;
+  color: white;
+  padding: .4rem 0;
+  width: 140px;
+  border-radius: 10px 0 10px;
+  border: none;
+  transition: all 0.35s linear;
+  position: relative;
+  border: 2px solid white;
+  z-index: 3333333;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 2px solid transparent;
+
+}
+
+.modal-footer .booking_btn:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 0 10px 0 10px;
+}
+
+
+
+
+@media (max-width :992px) {
+
+  .text-overlay h1 {
     font-size: 60px;
   }
 
@@ -1056,47 +1096,48 @@ background-position: center;
     font-size: 22px;
   }
 
-  .footer .email_pera{
+  .footer .email_pera {
     padding: 0 40px;
   }
 
-  .email_pera br{
+  .email_pera br {
     display: none;
   }
 
-  .wedding-banner .text-banner , .props-banner .text-banner{
+  .wedding-banner .text-banner,
+  .props-banner .text-banner {
     width: 100%;
     padding: 0 100px;
     top: 55%;
   }
 
-  .new_props_banner .text-banner{
+  .new_props_banner .text-banner {
     top: 47%;
   }
 
-  .arrow-down-icon{
+  .arrow-down-icon {
     font-size: 75px !important;
   }
 
-  .our_product .form_box{
+  .our_product .form_box {
     min-height: 460px !important;
   }
 
-  .rental-footer .footer .container .footer_arrow1{
+  .rental-footer .footer .container .footer_arrow1 {
     display: none;
   }
 
 }
 
 
-@media (max-width :768px){
-  
-  .text-overlay{
+@media (max-width :768px) {
+
+  .text-overlay {
     top: 18%;
   }
 
 
-  .text-overlay h1{
+  .text-overlay h1 {
     font-size: 50px;
   }
 
@@ -1104,25 +1145,27 @@ background-position: center;
     font-size: 20px;
   }
 
-  .banner_btn{
-    font-size:14px;
+  .banner_btn {
+    font-size: 14px;
   }
 
-  .background-container{
+  .background-container {
     height: 600px;
   }
 
-  .wedding-banner .text-banner , .props-banner .text-banner{
+  .wedding-banner .text-banner,
+  .props-banner .text-banner {
     padding: 0 50px;
   }
 
-  .wedding-banner h4 , .props-banner h4{
+  .wedding-banner h4,
+  .props-banner h4 {
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 2px;
   }
 
-  .wedding-footer .footer .container .footer_arrow1{
+  .wedding-footer .footer .container .footer_arrow1 {
     display: none;
   }
 
@@ -1132,21 +1175,22 @@ background-position: center;
 
 
 @media (max-width: 600px) {
+
   /* @media screen and (max-width:1100px) {
     .grid .card {
       width: calc((100% / 2) - 20px);
       /* display: grid;
       grid-template-columns: repeat(auto-fill, minmax(190px, 2fr));
       gap: 32px; */
-    /* } */
-/* } */
+  /* } */
+  /* } */
   /* .text-overlay h1 {
     font-size: 28px;
   }
   .text-overlay{
     margin: 0 1rem;
   } */
-  .arrow-home{
+  .arrow-home {
     display: none;
   }
 
@@ -1158,7 +1202,7 @@ background-position: center;
     height: 431px;
   }
 
- 
+
 
   .logo {
     width: 163px;
@@ -1193,7 +1237,7 @@ background-position: center;
   }
 
 
-  .lsiting_rentel .row .img{
+  .lsiting_rentel .row .img {
     height: unset;
   }
 
@@ -1233,32 +1277,38 @@ background-position: center;
   .footer .container .footer_arrow1 {
     width: 100px;
   }
-  .new_props_banner .text-banner{
+
+  .new_props_banner .text-banner {
     top: 30%;
   }
 
 }
 
-@media (max-width : 568px){
+@media (max-width : 568px) {
   .faq-content .heading {
     font-size: 24px;
     line-height: unset;
     margin-bottom: 40px !important;
   }
-
-  .faq-content .faq-inputs{
+  .footer .footer_icons {
+    color: white;
+    font-size: 25px;
+    margin: .5rem;
+  }
+  
+  .faq-content .faq-inputs {
     padding: 1rem 0;
   }
 
-  .faq-questions .parent div{
+  .faq-questions .parent div {
     font-size: 14px;
   }
 
-  .faq-questions .parent .description{
-     font-size: 13px;
+  .faq-questions .parent .description {
+    font-size: 13px;
   }
 
-  .footer .email_pera{
+  .footer .email_pera {
     padding: 0 0;
     font-size: 15px;
   }
@@ -1268,24 +1318,24 @@ background-position: center;
     margin-top: 40px;
   }
 
-  .footer .inp_box input{
+  .footer .inp_box input {
     width: 180px;
   }
 
-  .footer .inp_box button{
+  .footer .inp_box button {
     width: 100px;
   }
 
-  .service-section .services_ul{
+  .service-section .services_ul {
     gap: 10px 0;
     margin: 40px 0 0 0;
   }
 
-  .service-section .services_ul li{
+  .service-section .services_ul li {
     width: 100%;
   }
 
-  .shoot-section .row .col-lg-6 p{
+  .shoot-section .row .col-lg-6 p {
     line-clamp: 8;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -1293,60 +1343,67 @@ background-position: center;
     text-overflow: ellipsis;
     overflow: hidden;
   }
-  .text-overlay{
+
+  .text-overlay {
     gap: 0;
   }
 
-  .text-overlay h1 , .text-overlay p{
+  .text-overlay h1,
+  .text-overlay p {
     text-align: center;
   }
 
-.banner_btn{
-    margin: 0  auto;
+  .banner_btn {
+    margin: 0 auto;
   }
 
-  .text-overlay{
+  .text-overlay {
     margin: 0 1rem;
   }
-   .text-overlay h1 {
+
+  .text-overlay h1 {
     font-size: 28px;
   }
-  .close-minu-button button{
+
+  .close-minu-button button {
     font-size: 20px;
     width: 100%;
   }
 
-  .footer p{
+  .footer p {
     font-size: 15px;
   }
 
-  .wedding-banner .text-banner h1 , .props-banner .text-banner h1{
+  .wedding-banner .text-banner h1,
+  .props-banner .text-banner h1 {
     line-height: 40px;
   }
 
-  .wedding-banner .text-banner , .props-banner .text-banner{
+  .wedding-banner .text-banner,
+  .props-banner .text-banner {
     padding: 0 20px;
   }
 
-  .wedding-banner h4 , .props-banner h4{
+  .wedding-banner h4,
+  .props-banner h4 {
     font-size: 16px;
     letter-spacing: 2px;
   }
 
-  .wedding-banner .text-banner{
+  .wedding-banner .text-banner {
     top: 48%;
   }
 
 
-  .arrow-down-icon{
+  .arrow-down-icon {
     font-size: 50px !important;
   }
 
-  .our_product input{
+  .our_product input {
     font-size: 14px;
   }
 
-  .our_product .card_props .pera_text{
+  .our_product .card_props .pera_text {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
@@ -1355,15 +1412,15 @@ background-position: center;
     -webkit-line-clamp: 2;
   }
 
-  .new_props_banner .text-banner{
+  .new_props_banner .text-banner {
     top: 30%;
   }
 
-  .our_product iframe{
+  .our_product iframe {
     height: 340px;
   }
 
-  .info_box p{
+  .info_box p {
     font-size: 15px;
   }
 

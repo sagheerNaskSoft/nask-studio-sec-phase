@@ -17,6 +17,7 @@ function SerivceSetion() {
         }, 3000);
 
         return () => clearInterval(interval);
+        // eslint-disable-next-line
     }, []);
 
 

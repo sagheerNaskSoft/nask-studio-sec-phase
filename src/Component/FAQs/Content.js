@@ -17,7 +17,6 @@ function Content() {
             title: "2. How do I book a session?",
             description: "You can book a session online through the YCloud platform or contact us directly at sales@naskstudio.com."
         },
-
         {
             id: 3,
             title: "3. Do you require an advance payment?",
@@ -91,10 +90,10 @@ function Content() {
                                 <div className="col-12 p-0" style={{ marginTop: '45px' }}>
                                     {filteredFaqs.length > 0 ? (
                                         filteredFaqs.map((faq, index) => (
-                                            <div key={faq.id} className="faq-questions my-3">
-                                                <div className="parent">
+                                            <div key={faq.id} className="faq-questions  my-3"  >
+                                                <div className="parent" onClick={() => handleToggle(index)}>
                                                     <div>{faq.title}</div>
-                                                    <span onClick={() => handleToggle(index)}>
+                                                    <span>
                                                         {activeIndex === index ? (
                                                             <FaMinus style={{ fontSize: '18px', color: "rgb(56, 53, 53)", marginBottom: '3px' }} />
                                                         ) : (

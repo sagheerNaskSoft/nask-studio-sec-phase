@@ -10,11 +10,8 @@ import PropsPage from './Pages/PropsPage';
 import RentalSpaces from './Pages/RentalSpaces';
 import Contactus from './Pages/Contactus';
 import FAQs from './Pages/FAQs';
-
 function App() {
-
   return (
-
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home />} />
@@ -27,7 +24,6 @@ function App() {
         <Route path='/faqs' element={<FAQs />} />
       </Routes>
     </BrowserRouter>
-
   );
 }
 

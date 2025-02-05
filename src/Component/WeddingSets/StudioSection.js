@@ -23,6 +23,7 @@ function StudioSection() {
     }, 3000);
 
     return () => clearInterval(interval);
+    // eslint-disable-next-line
   }, []);
 
   useEffect(() => {
@@ -31,6 +32,7 @@ function StudioSection() {
     }, 3000);
 
     return () => clearInterval(interval);
+    // eslint-disable-next-line
   }, []);
 
 
