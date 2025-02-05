@@ -9,10 +9,14 @@ import ProductionService from './Pages/ProductionService';
 import PropsPage from './Pages/PropsPage';
 import RentalSpaces from './Pages/RentalSpaces';
 import Contactus from './Pages/Contactus';
+import Privacy from './Pages/Privacy';
+import Termscondition from './Pages/Termscondition';
 import FAQs from './Pages/FAQs';
+import ScrollToTop from './Component/NavFooter/ScrollToTop'
 function App() {
   return (
     <BrowserRouter>
+  <ScrollToTop/>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about-us' element={<About />} />
@@ -20,6 +24,8 @@ function App() {
         <Route path='/production-service' element={<ProductionService />} />
         <Route path='/props' element={<PropsPage />} />
         <Route path='/rental-spaces' element={<RentalSpaces />} />
+        <Route path='/privacy-policy' element={<Privacy/>} />
+        <Route path='/terms-conditions' element={<Termscondition/>} />
         <Route path='/contact-us' element={<Contactus />} />
         <Route path='/faqs' element={<FAQs />} />
       </Routes>

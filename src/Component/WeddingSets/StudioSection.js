@@ -125,8 +125,11 @@ function StudioSection() {
                     </tbody>
                   </table>
                 </div>
-                <button className='banner_btn mb-sm-5 mb-0'>Book now<PiFlipVerticalLight className="btn_icon" />
-                </button>
+           <a href={`https://wa.me/+923051115501`} target="_blank" rel="noopener noreferrer">
+                                                  <button className='banner_btn mb-3'>
+                                                      Book Now <PiFlipVerticalLight className="btn_icon" />
+                                                  </button>
+                                              </a>
               </div>
             </div>
           </div>
@@ -190,8 +193,11 @@ function StudioSection() {
                     </tbody>
                   </table>
                 </div>
-                <button className='banner_btn mb-5'>Book now<PiFlipVerticalLight className="btn_icon" />
-                </button>
+         <a href={`https://wa.me/+923051115501`} target="_blank" rel="noopener noreferrer">
+                                                <button className='banner_btn mb-3'>
+                                                    Book Now <PiFlipVerticalLight className="btn_icon" />
+                                                </button>
+                                            </a>
               </div>
             </div>
             <div className='col-lg-7 col-md-12 col-12 d-md-block d-none order-lg-last order-first'>
