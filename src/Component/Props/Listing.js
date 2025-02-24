@@ -19,12 +19,12 @@ function Listing() {
     }
     return (
         <div style={{ background: "black" }}>
-            <div className='container our_product py-5'>
+            <div className='container our_product py-lg-5 pt-4 pb-sm-4 pb-3'>
                 <div className='d-flex justify-content-sm-between justify-content-center align-items-center flex-wrap' style={{gap:"20px 40px"}}>
                     <h5 className='m-md-0 my-2'>Our Props</h5>
                     <input onChange={(e) => handleSearch(e.target.value)} type="text" className="inp" placeholder="Search by Name" />
                 </div>
-                <div className='grid my-4'>
+             {filterproducts?.length?   <div className='grid my-md-4 mt-4 mb-2 '>
                     {filterproducts?.map((item) => {
                         return (
                             <Card onClick={() => handleShow(item?.image)}  className='card card_props border-0 my-2'>
@@ -39,7 +39,7 @@ function Listing() {
                             </Card>
                         )
                     })}
-                </div>
+                </div>:<h5>No record found !</h5>}
 
                 <Modal show={show} onHide={handleClose}>
                     <Modal.Header closeButton>
@@ -49,12 +49,9 @@ function Listing() {
                     </Modal.Body>
                     <Modal.Footer>
                         <Button className={"booking_btn"} text="Close" submit={handleClose} />
-
-
                     </Modal.Footer>
                 </Modal>
-            </div >
-
+            </div>
         </div>
     )
 }

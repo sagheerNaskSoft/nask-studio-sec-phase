@@ -23,6 +23,7 @@ function StudioSection() {
     }, 3000);
 
     return () => clearInterval(interval);
+    // eslint-disable-next-line
   }, []);
 
   useEffect(() => {
@@ -31,17 +32,18 @@ function StudioSection() {
     }, 3000);
 
     return () => clearInterval(interval);
+    // eslint-disable-next-line
   }, []);
 
 
 
   return (
     <>
-      <div className='service-section p-1 py-sm-5 py-3'>
+      <div className='service-section py-lg-5 pt-3 pb-3'>
         <div className='container'>
-          <h1 className='text-center my-sm-5 my-3'>Our Pre-Made Sets</h1>
+          <h1 className='text-center mt-lg-3 mt-4 mb-sm-5 mb-4 pb-sm-0 pb-2'>Our Pre-Made Sets</h1>
 
-          <div className="row mb-5">
+          <div className="row mb-md-5 mb-3">
 
             <div className='col-lg-7 col-md-12 col-12 d-md-block d-none'>
               <div className='row m-0'>
@@ -53,7 +55,7 @@ function StudioSection() {
                     <img src={img4} alt='img-1' />
                   </div>
                 </div>
-                <div className='col-md-6 p-0 my-sm-5 my-0'>
+                <div className='col-md-6 p-0 my-lg-5 mt-sm-5 mb-sm-3 my-0'>
                   <div className='img2'>
                     <img src={img3} alt='img-1' />
                   </div>
@@ -64,7 +66,7 @@ function StudioSection() {
 
               </div>
             </div>
-            <div className='col-lg-7 col-md-12 col-12 d-md-none d-block mb-md-0 mb-5'>
+            <div className='col-lg-7 col-md-12 col-12 d-md-none d-block mb-md-0 mb-3'>
               <div className="slider-container">
                 {/* Image Display */}
                 <div className="slider">
@@ -123,13 +125,16 @@ function StudioSection() {
                     </tbody>
                   </table>
                 </div>
-                <button className='banner_btn mb-sm-5 mb-0'>Book now<PiFlipVerticalLight className="btn_icon" />
-                </button>
+           <a href={`https://wa.me/+923051115501`} target="_blank" rel="noopener noreferrer">
+                                                  <button className='banner_btn mb-3'>
+                                                      Book Now <PiFlipVerticalLight className="btn_icon" />
+                                                  </button>
+                                              </a>
               </div>
             </div>
           </div>
           <div className="row pt-lg-5 pt-3">
-          <div className='col-lg-7 col-md-12 col-12 d-md-none d-block my-md-0 mb-5 mt-4'>
+          <div className='col-lg-7 col-md-12 col-12 d-md-none d-block my-md-0 mb-3 mt-4'>
               <div className="slider-container">
                 {/* Image Display */}
                 <div className="slider">
@@ -188,8 +193,11 @@ function StudioSection() {
                     </tbody>
                   </table>
                 </div>
-                <button className='banner_btn mb-5'>Book now<PiFlipVerticalLight className="btn_icon" />
-                </button>
+         <a href={`https://wa.me/+923051115501`} target="_blank" rel="noopener noreferrer">
+                                                <button className='banner_btn mb-3'>
+                                                    Book Now <PiFlipVerticalLight className="btn_icon" />
+                                                </button>
+                                            </a>
               </div>
             </div>
             <div className='col-lg-7 col-md-12 col-12 d-md-block d-none order-lg-last order-first'>
@@ -202,7 +210,7 @@ function StudioSection() {
                     <img src={img5} alt='img-1' />
                   </div>
                 </div>
-                <div className='col-md-6 p-0 my-sm-5 my-0'>
+                <div className='col-md-6 p-0 my-lg-5 mt-sm-5 mb-sm-3 my-0'>
                   <div className='img2'>
                     <img src={img7} alt='img-1' />
                   </div>

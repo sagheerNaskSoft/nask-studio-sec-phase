@@ -83,10 +83,10 @@ function FormMap({snakbar}) {
     return (
         <div style={{color:"white"}} className='contact-form p-1'>
             
-        <div className='container my-5 our_product '>
-                    <h5 className='mb-4'>Contact Us</h5>
+        <div className='container mb-lg-3 mt-4 mb-sm-4 mb-3 our_product '>
+                    <h5 className='mb-4 mt-md-0 mt-2'>Contact Us</h5>
                     <div className='row pt-4'>
-                        <div style={{height:"100%"}} className='col-lg-6 col-md-12 col-12 mb-5'>
+                        <div style={{height:"100%"}} className='col-lg-6 col-md-12 col-12 mb-lg-5 mb-md-4 mb-5'>
                         {/* <div className='d-flex justify-content-center h-100'> */}
                 <div style={{minHeight:"536px"}} className='form_box'>
                 <h5 style={{fontSize:"14px",textAlign:"start"}}>Let's Talk About Everything!</h5>
@@ -103,14 +103,14 @@ function FormMap({snakbar}) {
                             <div className='col-lg-6 col-md-6 col-12'>
                                 <div className='inp_box'>
                                     <label>Email <span className='text-danger'>*</span></label>
-                                    <input value={data?.email} onChange={(e) => setData({ ...data, email: e.target.value })} type='text' placeholder='E-mail' className='w-100' />
+                                    <input value={data?.email} onChange={(e) => setData({ ...data, email: e.target.value })} type='email' placeholder='E-mail' className='w-100' />
                                     {falidError?.email && <span className='error'>Please Enter Your Email</span>}
                                 </div>
                             </div>
                             <div className='col-lg-6 col-md-6 col-12'>
                                 <div className='inp_box'>
                                     <label>Mobile Number <span className='text-danger'>*</span></label>
-                                    <input value={data?.phone} onChange={(e) => setData({ ...data, phone: e.target.value })} type='text' placeholder='Mobile Number' className='w-100' />
+                                    <input maxLength={11} value={data?.phone} onChange={(e) => setData({ ...data, phone: e.target.value })} type='number' placeholder='Mobile Number' className='w-100' />
                                     {falidError?.phone && <span className='error'>Please Enter Your Mobile Number</span>}
                                 </div>
                             </div>
@@ -129,7 +129,7 @@ function FormMap({snakbar}) {
                 </div>
             {/* </div> */}
                         </div>
-                        <div className='col-lg-6 col-md-12 col-12'>
+                        <div className='col-lg-6 col-md-12 col-12 mt-sm-0 mt-3'>
                             <div>
                                 
                         <iframe style={{borderRadius:"5px"}} title='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.070000692585!2d74.4394726!3d31.522237299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190f6535ebd1af%3A0x941f600d892fae62!2sNaskStudio!5e0!3m2!1sen!2s!4v1736177659903!5m2!1sen!2s" width="100%" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

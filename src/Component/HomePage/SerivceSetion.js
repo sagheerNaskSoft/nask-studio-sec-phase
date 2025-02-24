@@ -17,6 +17,7 @@ function SerivceSetion() {
         }, 3000);
 
         return () => clearInterval(interval);
+        // eslint-disable-next-line
     }, []);
 
 
@@ -25,9 +26,9 @@ function SerivceSetion() {
 
 
     return (
-        <div className='service-section p-1 py-md-5 pt-3 pb-5'>
+        <div className='service-section p-1 py-lg-5 pt-3 pb-4'>
             <div className='container px-sm-3 px-4'>
-                <h1 className='text-center my-sm-5 mt-4 mb-5'>Our Services</h1>
+                <h1 className='text-center my-lg-5 my-3'>Our Services</h1>
 
                 <div className="row">
                     <div className='col-lg-4 col-md-12 col-12 d-flex align-items-center'>
@@ -74,7 +75,7 @@ function SerivceSetion() {
                                 </div>
                             </div>
                         </div>
-                        <div className="div d-md-none d-block mt-md-0 mt-5">
+                        <div className="div d-md-none d-block mt-lg-0 mt-3">
                             <div className="slider-container">
                                 {/* Image Display */}
                                 <div className="slider">

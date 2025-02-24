@@ -70,6 +70,7 @@ const naviagte=useNavigate()
             setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
         }, 3000); // Change every 3 seconds
         return () => clearInterval(interval);
+        // eslint-disable-next-line
     }, [images.length]);
     return (
         <div className="background-container">
@@ -90,8 +91,10 @@ const naviagte=useNavigate()
                     }}
                 ></div>
             ))}
-            <div className='home-bar d-flex justify-content-between px-4'>
+            <div className='home-bar d-flex justify-content-between px-4 my-2'>
+                <Link to={'/'}>
                 <img className='logo' src={logo} alt='logo' />
+                </Link>
                 <HiMiniBars3BottomRight className='icons' onClick={toggleMenu} />
 
                 {/* Your Menu */}
@@ -113,18 +116,17 @@ const naviagte=useNavigate()
                                     <Link to={'/props'}>Props</Link>
                                 </li>
                                 <li>
-                                    <Link to={'/production-service'}>Producation Services</Link>
+                                    <Link to={'/production-service'}>Production Services</Link>
                                 </li>
                                 <li>
-                                    <Link className='/contact-us'>Contact Us</Link>
+                                    <Link to={'/contact-us'}>Contact Us</Link>
                                 </li>
                                 <div className='close-minu-button'>
-                                    <button onClick={toggleMenu}>close Menu</button>
+                                    <button onClick={toggleMenu}>Close Menu</button>
                                 </div>
                             </ul>
                         </div>
                     </div>
-
             </div>
             <div className="text-overlay">
                 <div>
@@ -154,7 +156,7 @@ const naviagte=useNavigate()
                             <Link to={'/props'}>Props</Link>
                         </li>
                         <li>
-                            <Link to={'/production-service'}>Producation Services</Link>
+                            <Link to={'/production-service'}>Production Services</Link>
                         </li>
                         <li>
                             <Link to={'/contact-us'}>Contact Us</Link>

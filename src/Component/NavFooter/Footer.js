@@ -1,9 +1,18 @@
-import React from 'react'
-import { FaFacebook, FaYoutube } from 'react-icons/fa'
+import React, { useState } from 'react'
+import { FaFacebook, FaLinkedin, FaPinterest, FaTwitterSquare, FaYoutube } from 'react-icons/fa'
 import { AiFillTikTok } from 'react-icons/ai'
 import { FaSquareInstagram } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
+import SnakBar from './SnakBar'
 function Footer() {
+  const [value, setValue] = useState();
+    const [errors, setError] = useState();
+    const [show,setShow]=React.useState(false)
+    const [message,setMessage]=React.useState({succes:false,message:""})
+    const isValidEmail = (email) => {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    };
   return (
     <div className='footer py-5'>
         <div style={{position:"relative"}} className='container'>
@@ -12,18 +21,64 @@ function Footer() {
         <h1>Get In Touch !</h1>
 
         <p className='email_pera'>We provide Creative photography for editorial, PR, celebrity and lifestyle assignments Pakistan Wide. We provide Creative <br/>photography for editorial, PR, celebrity and lifestyle assignments Pakistan Wide. We provide Creative photography for editorial, PR, <br/>celebrity and lifestyle assignments Pakistan Wide.</p>
-        <div className='inp_box'>
-            <input type='email' placeholder='Enter E-mail'/>
-            <button>Subscribe</button>
+        <div style={{position:"relative",width:"max-content",margin:"auto"}}>
+        <div className='inp_box' >
+  
+            <input  value={value} required
+                            onChange={(e) => setValue(e.target.value)}
+                           type='email' placeholder='Enter E-mail'/>
+            <button onClick={() => {
+                                if (!value) {
+                                    setError("Please enter email");
+                                } else if (!isValidEmail(value)) {
+                                    setError("Please enter a valid email");
+                                } else {
+                                    setTimeout(() => {
+                                        setShow(true)
+                                        setMessage({succes:true,message:"Email Sent Successfully",})
+                                        //   newslater(value);
+                                        setValue("");
+                                        setError("");
+                                        
+                                    }, 1500);
+                                }
+                            }}>Subscribe</button>
+                              
+                         
+                     
+        </div>
+        <span style={{position:"absolute",top:"100%",left:"0",fontSize:"13px"}}className='text-danger'>
+                                {errors}
+                            </span>
         </div>
         {/* <img className='footer_arrow2' src={arrow} alt='...'/> */}
         <hr style={{borderColor:"white"}} className='my-5'/>
         </div>
         <div className='container '>
-                <div className='d-flex justify-content-center'><FaFacebook className="footer_icons" />
-                <FaSquareInstagram className="footer_icons" />
-                <AiFillTikTok className="footer_icons" />
-                <FaYoutube className="footer_icons" />
+                <div className='d-flex justify-content-center flex-wrap'>
+                  <a target="_blank" rel="noreferrer" href='https://www.facebook.com/naskstudios'>
+                <FaFacebook className="footer_icons" />
+                  </a>
+                  <a target="_blank" rel="noreferrer" href='https://www.instagram.com/naskstudio_officials/'>
+                  <FaSquareInstagram className="footer_icons" />
+                  </a>
+                  <a target="_blank" rel="noreferrer" href='https://www.tiktok.com/@naskstudio'>
+                  <AiFillTikTok className="footer_icons" />
+
+                  </a>
+                  <a target="_blank" rel="noreferrer" href='https://www.youtube.com/@naskstudioofficial'>
+                  <FaYoutube className="footer_icons" />
+
+                  </a>
+                  <a target="_blank" rel="noreferrer" href='https://twitter.com/NaskStudio'>
+                  <FaTwitterSquare className="footer_icons" />
+                  </a>
+                  <a target="_blank" rel="noreferrer" href='https://www.pinterest.co.uk/naskstudio/'>
+                  <FaPinterest  className="footer_icons"/>
+                  </a>
+                  <a target="_blank" rel="noreferrer" href='https://www.linkedin.com/company/naskstudio/'>
+                  <FaLinkedin className="footer_icons" />
+                  </a>
                 </div>
                 <p className='text-center' style={{color:"white"}}>+92 305 1115 501<p >sale@naskstudio.com</p>
                 </p>
@@ -31,13 +86,13 @@ function Footer() {
                 </p>
                 <p className='text-center' style={{color:"white"}}>Building No. 21, 3rd Floor, Block-CCA, DHA Phase 8 - Ex Park View Phase-8 Lahore, 54000
                 </p>
-                <div className='d-flex justify-content-center pages-footer'><Link className="link_footer">FAQs</Link><span className='mx-2'><div class="line">|</div></span><Link className="link_footer">Terms & Condtions</Link><span className='mx-2'><div class="line">|</div></span><Link className="link_footer">Privacy Policy</Link></div>
+                <div className='d-flex justify-content-center pages-footer'><Link to={'/faqs'} className="link_footer">FAQs</Link><span className='mx-2'><div class="line">|</div></span><Link to={'/terms-conditions'} className="link_footer">Terms & Conditions</Link><span className='mx-2'><div class="line">|</div></span><Link to={'/privacy-policy'} className="link_footer">Privacy Policy</Link></div>
                 <hr style={{borderColor:"white"}} className='my-5'/>
-                <p className='text-center' style={{color:"white"}}>© Copyright 2024 naskstudio.com. All Rights Reserved
+                <p className='text-center' style={{color:"white"}}>All Rights Reserved by naskstudio.com
                 </p>
         </div>
+        <SnakBar show={show} message={message}  setShow={setShow}/>
     </div>
   )
 }
-
 export default Footer
