@@ -58,7 +58,7 @@ function NavBar() {
                                     <Link to={'/contact-us'}>Contact Us</Link>
                                 </li>
                                 <div className='close-minu-button'>
-                                    <button onClick={toggleMenu}>close Menu</button>
+                                    <button onClick={toggleMenu}>Close Menu</button>
                                 </div>
                             </ul>
                         </div>

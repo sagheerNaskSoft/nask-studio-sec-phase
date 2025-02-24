@@ -23,7 +23,8 @@ function Footer() {
         <p className='email_pera'>We provide Creative photography for editorial, PR, celebrity and lifestyle assignments Pakistan Wide. We provide Creative <br/>photography for editorial, PR, celebrity and lifestyle assignments Pakistan Wide. We provide Creative photography for editorial, PR, <br/>celebrity and lifestyle assignments Pakistan Wide.</p>
         <div style={{position:"relative",width:"max-content",margin:"auto"}}>
         <div className='inp_box' >
-            <input  value={value}
+  
+            <input  value={value} required
                             onChange={(e) => setValue(e.target.value)}
                            type='email' placeholder='Enter E-mail'/>
             <button onClick={() => {
@@ -87,12 +88,11 @@ function Footer() {
                 </p>
                 <div className='d-flex justify-content-center pages-footer'><Link to={'/faqs'} className="link_footer">FAQs</Link><span className='mx-2'><div class="line">|</div></span><Link to={'/terms-conditions'} className="link_footer">Terms & Conditions</Link><span className='mx-2'><div class="line">|</div></span><Link to={'/privacy-policy'} className="link_footer">Privacy Policy</Link></div>
                 <hr style={{borderColor:"white"}} className='my-5'/>
-                <p className='text-center' style={{color:"white"}}>© Copyright 2024 naskstudio.com. All Rights Reserved
+                <p className='text-center' style={{color:"white"}}>All Rights Reserved by naskstudio.com
                 </p>
         </div>
         <SnakBar show={show} message={message}  setShow={setShow}/>
     </div>
   )
 }
-
 export default Footer

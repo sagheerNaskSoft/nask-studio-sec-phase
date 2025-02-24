@@ -104,14 +104,14 @@ function FormMap({snakbar}) {
                             <div className='col-lg-6 col-md-6 col-12'>
                                 <div className='inp_box'>
                                     <label>Email <span className='text-danger'>*</span></label>
-                                    <input value={data?.email} onChange={(e) => setData({ ...data, email: e.target.value })} type='text' placeholder='E-mail' className='w-100' />
+                                    <input value={data?.email} onChange={(e) => setData({ ...data, email: e.target.value })} type='email' placeholder='E-mail' className='w-100' />
                                     {falidError?.email && <span className='error'>Please Enter Your Email</span>}
                                 </div>
                             </div>
                             <div className='col-lg-6 col-md-6 col-12'>
                                 <div className='inp_box'>
                                     <label>Mobile Number <span className='text-danger'>*</span></label>
-                                    <input value={data?.phone} onChange={(e) => setData({ ...data, phone: e.target.value })} type='text' placeholder='Mobile Number' className='w-100' />
+                                    <input maxLength={11} value={data?.phone} onChange={(e) => setData({ ...data, phone: e.target.value })} type='number' placeholder='Mobile Number' className='w-100' />
                                     {falidError?.phone && <span className='error'>Please Enter Your Mobile Number</span>}
                                 </div>
                             </div>
@@ -119,11 +119,11 @@ function FormMap({snakbar}) {
                                 <div className='inp_box'>
                                     <label>Message <span className='text-danger'>*</span></label>
                                     <textarea value={data?.message} onChange={(e) => setData({ ...data, message: e.target.value })} type='text' placeholder='Message' className='w-100' />
-                                    {falidError?.message && <span className='error'>Please Enter Your message</span>}
+                                    {falidError?.message && <span className='error mt-1'>Please Enter Your message</span>}
                                 </div>
                             </div>
                             <div className='col-12 d-flex'>
-                                <button type='submit' className='banner_btn'>Submit</button>
+                                <button type='submit' className='banner_btn mt-2'>Submit</button>
                             </div>
                         </div>
                     </form>

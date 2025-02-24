@@ -373,14 +373,18 @@ body {
   display: flex;
   overflow: hidden;
   border: 1px solid white;
+  overflow: hidden;
+ 
 }
+
+
 
 .footer .inp_box input {
   width: 300px;
   padding: .5rem 1rem;
   background: none;
-  color: black !important;
   border: none;
+  color: white;
   /* border-radius: 10px 0 10px; */
   margin: auto;
   display: flex;
@@ -399,8 +403,17 @@ form input{
   margin: auto;
   display: flex;
   justify-content: center;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
+.footer .inp_box button:hover{
+  /* background-color: rgba(255, 255, 255, 0.568); */
+  background-color: black;
+  color: white;
+  transform: scale(1.05);
+}
+ 
 .footer .container .footer_arrow1 {
   position: absolute;
   /* width: 100px; */
@@ -674,11 +687,13 @@ form input{
 .grid {
   display: flex;
   justify-content: space-between;
+  /* justify-content: space-around; */
   flex-wrap: wrap;
 }
 
 .grid .card {
   width: calc((100% / 5) - 20px);
+  /* margin-right: 25px; */
   /* display: grid;
   grid-template-columns: repeat(auto-fill, minmax(190px, 2fr));
   gap: 32px; */
@@ -1472,6 +1487,7 @@ form input{
     font-size: 25px;
     margin: .5rem;
   }
+
   
   .faq-content .faq-inputs {
     padding: 1rem 0;
@@ -1601,5 +1617,11 @@ form input{
     font-size: 15px;
   }
 
+
+}
+@media (max-width : 350px) {
+  .props-banner .text-banner{
+    margin-top: 0 !important;
+  }
 
 }

@@ -66,14 +66,14 @@ const Form1 = ({ data, handleChange, nextStep }) => {
                             <div className='col-lg-6 col-md-6 col-12'>
                                 <div className='inp_box'>
                                     <label>Email <span className='text-danger'>*</span></label>
-                                    <input value={data?.email} onChange={(e) => handleChange("email", e.target.value)} type='text' placeholder='E-mail' className='w-100' />
+                                    <input value={data?.email} onChange={(e) => handleChange("email", e.target.value)} type='email' placeholder='E-mail' className='w-100' />
                                     {falidError?.email && <span className='error'>Please Enter Your Email</span>}
                                 </div>
                             </div>
                             <div className='col-lg-6 col-md-6 col-12'>
                                 <div className='inp_box'>
                                     <label>Mobile Number <span className='text-danger'>*</span></label>
-                                    <input value={data?.phone}  onChange={(e) => handleChange("phone", e.target.value)} type='text' placeholder='Mobile Number' className='w-100' />
+                                    <input maxLength={11} value={data?.phone}  onChange={(e) => handleChange("phone", e.target.value)} type='number' placeholder='Mobile Number' className='w-100' />
                                     {falidError?.phone && <span className='error'>Please Enter Your Mobile Number</span>}
                                 </div>
                             </div>

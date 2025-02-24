@@ -91,7 +91,7 @@ const naviagte=useNavigate()
                     }}
                 ></div>
             ))}
-            <div className='home-bar d-flex justify-content-between px-4'>
+            <div className='home-bar d-flex justify-content-between px-4 my-2'>
                 <Link to={'/'}>
                 <img className='logo' src={logo} alt='logo' />
                 </Link>
@@ -116,18 +116,17 @@ const naviagte=useNavigate()
                                     <Link to={'/props'}>Props</Link>
                                 </li>
                                 <li>
-                                    <Link to={'/production-service'}>Producation Services</Link>
+                                    <Link to={'/production-service'}>Production Services</Link>
                                 </li>
                                 <li>
                                     <Link to={'/contact-us'}>Contact Us</Link>
                                 </li>
                                 <div className='close-minu-button'>
-                                    <button onClick={toggleMenu}>close Menu</button>
+                                    <button onClick={toggleMenu}>Close Menu</button>
                                 </div>
                             </ul>
                         </div>
                     </div>
-
             </div>
             <div className="text-overlay">
                 <div>
@@ -157,7 +156,7 @@ const naviagte=useNavigate()
                             <Link to={'/props'}>Props</Link>
                         </li>
                         <li>
-                            <Link to={'/production-service'}>Producation Services</Link>
+                            <Link to={'/production-service'}>Production Services</Link>
                         </li>
                         <li>
                             <Link to={'/contact-us'}>Contact Us</Link>
