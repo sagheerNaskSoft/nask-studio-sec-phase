@@ -39,7 +39,6 @@ function FormMap({snakbar}) {
           errors.phone = "Phone is required.";
         }
     
-    
         setFalidError(errors);
     
         return Object.keys(errors).length === 0;
@@ -66,7 +65,7 @@ function FormMap({snakbar}) {
                     email: '',
                     phone: '',
                     message: ''
-                })
+                }) 
                 },
                 (error) => {
                     snakbar(true,{succes:false,message:"Failed to send email. Please try again."})

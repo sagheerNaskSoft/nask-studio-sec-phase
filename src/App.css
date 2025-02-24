@@ -116,6 +116,7 @@ body {
   opacity: 0;
   transition: opacity 1s ease-in-out;
   background: linear-gradient(to right rgba(0, 0, 0, 0.338), rgba(0, 0, 0, 0.464)), url(./Assete/HomaBanner/1.jpg);
+
 }
 
 .background.active {

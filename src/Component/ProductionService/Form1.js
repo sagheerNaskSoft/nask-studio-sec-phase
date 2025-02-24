@@ -2,7 +2,7 @@ import React from "react";
 import { PiFlipVerticalLight } from "react-icons/pi";
 
 const Form1 = ({ data, handleChange, nextStep }) => {
-        const [falidError, setFalidError] = React.useState({})
+    const [falidError, setFalidError] = React.useState({})
     const validate = (e) => {
 
         let errors = {};
@@ -20,7 +20,7 @@ const Form1 = ({ data, handleChange, nextStep }) => {
         } else if (!isValidEmail(data.email)) {
           errors.email = "Please enter a valid email address.";
         }
-    
+
         if (!data.business_name) {
           errors.business_name = "Message is required.";
         }
